@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/elastic_download_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ed563f"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <is.arontibo.library.ElasticDownloadView
+            android:id="@+id/elastic_download_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/doneFabBtn"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_check_white_24px"
+                android:layout_weight="0.07"
+                android:visibility="invisible"
+                tools:ignore="VectorDrawableCompat" />
+
+
+</FrameLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/registration"
+            android:textSize="@dimen/headingSize" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="@string/login_to_complete_registration"
+            android:textSize="@dimen/subHeadingSize"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/helperId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/editTextContentSize"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@_1234567890"
+                android:inputType="textFilter"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/userID"
+                app:met_iconLeft="@drawable/ic_account_circle_black_24dp"
+                app:met_iconPadding="4dp"
+                android:paddingBottom="10dp"
+                android:hint="@string/enter_userID"
+                app:met_clearButton="true"
+                app:met_maxCharacters="20"
+                android:maxLength="20"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/helperPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/editTextContentSize"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_lock_black_24dp"
+                app:met_iconPadding="4dp"
+                android:paddingBottom="10dp"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@$_1234567890"
+                android:inputType="textPassword"
+                app:met_floatingLabelText="@string/password"
+                android:hint="@string/enter_password"
+                app:met_clearButton="true"
+                app:met_maxCharacters="30"
+                android:maxLength="30" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+            android:drawablePadding="9dp"
+            android:textColor="#000"
+            android:alpha="0.3"
+            android:text="@string/enter_credentials_provided_by_supervisor"
+            android:textSize="13sp"/>
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/registrationLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proceed"
+            android:textSize="@dimen/buttonTextSize"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

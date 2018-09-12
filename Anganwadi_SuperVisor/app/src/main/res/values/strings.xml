@@ -1,0 +1,86 @@
+<resources>
+
+
+    <string name="log_out">Log Out</string>
+
+    <!--Splash Activity-->
+    <string name="anganwadi">Anganwadi</string>
+    <string name="app_name">SuperVisor</string>
+    <string name="lets_make_someones_day">Let`s make someone`s day</string>
+
+    <!--Supervisor Login Activity-->
+    <string name="welcome">Welcome</string>
+    <string name="sign_in_please">Sign in Please</string>
+    <string name="supervisor_id">Supervisor ID</string>
+    <string name="enter_supervisor_id">Enter Supervisor ID</string>
+    <string name="supervisor_password">Supervisor Password</string>
+    <string name="enter_supervisor_password">Enter Supervisor Password</string>
+    <string name="sign_in">Sign In</string>
+
+    <!--Supervisor Home Activity-->
+    <string name="new_helper">New helper</string>
+    <string name="unverified_helpers_list">Unverfied Helpers</string>
+    <string name="working_helpers_list">Working Helpers</string>
+    <string name="show_Current_Stock">Current Stock</string>
+    <string name="show_Stock_Bills">Stock Bills</string>
+    <string name="show_Rejected_Helpers">Rejected Helpers</string>
+    <string name="show_Medical_Records">Medical Records</string>
+    <string name="show_Registered_Children">Registered Children</string>
+
+
+    <!--New Helper Activity-->
+    <string name="generate_credentials_for_helper">Generate Credentials For Helper</string>
+    <string name="enter_name_of_new_helper">Enter Name of new helper</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_sur_name">Enter Sur Name</string>
+    <string name="sur_name">Sur Name</string>
+    <string name="generated_user_id">Generated User ID</string>
+    <string name="user_id">User ID</string>
+    <string name="generated_password">Generated Password</string>
+    <string name="password">Password</string>
+    <string name="these_will_be_auto_generated">These will be auto-generated</string>
+    <string name="create_helper_Account">Create helper`s Account</string>
+    <string name="generate_id__password">Generate ID Password</string>
+    <string name="id_created">ID created</string>
+    <string name="creating_helpers_account">Creating Helper`s Account</string>
+
+    <!--UnverifiedHelperspers Details Verify Activity-->
+    <string name="verify">Verify</string>
+    <string name="review">Review</string>
+    <string name="reject">Reject</string>
+    <string name="correct">Correct</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="okay">Okay</string>
+    <string name="marked">Marked</string>
+    <string name="reason_for_application_rejection">Reason for Application Rejection</string>
+    <string name="write_rejection_reason_here">Write Rejection Reason Here</string>
+    <string name="mark_all_fields_correct">Mark all fields Correct</string>
+
+    <!--Current Stock Activity-->
+    <string name="item">Item</string>
+    <string name="quantity">Quantity</string>
+
+    <!--Stock Bill Activity-->
+    <string name="billno">Bill No</string>
+    <string name="datetime">Bill Date</string>
+    <string name="receivedby">Received By: </string>
+
+    <!--Stock Bill View Activity-->
+    <string name="billtime">Bill Time</string>
+    <string name="billitems">Bill Items</string>
+    <string name="deliveredby">Delivered By: </string>
+
+    <!--Stock Bill View Activity-->
+    <string name="helperid">Helper ID</string>
+    <string name="helpername">Helper Name</string>
+    <string name="rejectionreason">Rejection Reason</string>
+
+    <!--Search Bar Value String-->
+    <string name="path_search">
+       M141,17 A9,9 0 1,1 142,16 L149,23
+    </string>
+
+
+</resources>

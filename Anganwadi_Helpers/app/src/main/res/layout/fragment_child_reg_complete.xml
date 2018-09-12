@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".child_reg_complete">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardCornerRadius="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#aa00aa"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Congratulation!!!!!"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3617e6"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="You have Successfully Completed all Steps "
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:id="@+id/click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here to go on Home page"
+                android:textColorHint="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/buttonTextSize"
+                android:background="@drawable/white_boundary_black_bck"
+                android:padding="14dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

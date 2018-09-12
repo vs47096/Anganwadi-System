@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/photo_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/otpInputDialogCloseBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:backgroundTint="#4c868181"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_clear_white_24px"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/otpTxtBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        app:met_textColorHint="#fff"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:met_textColor="#fff"
+        app:met_clearButton="true"
+        app:met_maxCharacters="6"
+        android:maxLength="6"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="OTP" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/otpDoneBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_check_white_24px"
+        tools:ignore="VectorDrawableCompat" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/resendOtpBtn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_refresh_white_24px"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+        android:drawableTint="#fff"
+        android:drawablePadding="9dp"
+        android:textColor="#fff"
+        android:text="Didn`t Receive OTP ?"
+        android:textSize="14dp"/>
+
+</LinearLayout>

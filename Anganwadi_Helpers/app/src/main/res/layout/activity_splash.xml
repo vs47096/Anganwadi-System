@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/splash_foreground">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/motherchild"/>
+
+        <com.example.vinamra.anganwadi_helpers.TitanicTextView
+            android:id="@+id/titanic_tv"
+            android:text="@string/anganwadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#212121"
+            android:textSize="70sp"/> />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textSize="45sp"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:background="@color/white"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lets_make_someones_day"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/subHeadingSize"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@drawable/photo_background"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Made with "
+            android:gravity="center"
+            android:textSize="@dimen/subHeadingSize"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/ic_code_white_36dp"/>
+    </LinearLayout>
+
+
+</FrameLayout>

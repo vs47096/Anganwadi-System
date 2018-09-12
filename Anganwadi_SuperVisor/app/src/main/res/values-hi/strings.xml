@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name = "log_out"> लॉग आउट </string>
+
+    <!--Splash Activity-->
+    <string name="lets_make_someones_day"> चलिए किसी का दिन बनाते हैं </string>
+
+    <!--Supervisor Home Activity-->
+         <string name="new_helper"> नया सहायक </string>
+         <string name = "unverified_helpers_list"> अनवरोधित हेल्पर्स </string>
+         <string name = "working_helpers_list"> कार्यरत सहायक </string>
+         <string name = "show_Current_Stock"> वर्तमान स्टॉक </string>
+         <string name = "show_Stock_Bills"> स्टॉक बिल </string>
+         <string name = "show_Rejected_Helpers"> अस्वीकृत सहायक </string>
+         <string name = "show_Medical_Records"> मेडिकल रिकॉर्ड्स </string>
+         <string name = "show_Registered_Children"> पंजीकृत बच्चे </string>
+
+    <!--New Helper Activity-->
+    <string name = "gener_credentials_for_helper"> सहायक के लिए प्रमाण पत्र जेनरेट करें </string>
+         <string name = "enter_name_of_new_helper"> नए सहायक का नाम दर्ज करें </string>
+         <string name = "enter_first_name"> पहला नाम दर्ज करें </string>
+         <string name = "first_name"> पहला नाम </string>
+         <string name = "enter_sur_name"> सुर नाम दर्ज करें </string>
+         <string name = "sur_name"> सुर नाम </string>
+         <string name = "gener_user_id"> जेनरेटेड उपयोगकर्ता आईडी </string>
+         <string name = "user_id"> उपयोगकर्ता आईडी </string>
+         <string name = "gener_password"> जनरेट किया गया पासवर्ड </string>
+         <string name = "password"> पासवर्ड </string>
+         <string name = "these_will_be_auto_generated"> ये स्वतः उत्पन्न होंगे </string>
+         <string name = "create_helper_Account"> सहायक का खाता बनाएं </string>
+         <string name = "gener_id__password"> आईडी पासवर्ड जेनरेट करें </string>
+         <string name = "id_created"> आईडी बनाई गई </string>
+         <string name = "create_helpers_account"> सहायक का खाता बनाना </string>
+
+    <!--UnverifiedHelperspers Details Verify Activity-->
+          <string name="verify"> सत्यापित करें </string>
+         <string name="review"> समीक्षा </string>
+         <string name="reject"> अस्वीकार करें </string>
+         <string name="correct"> सही </string>
+         <string name="cancel"> रद्द करें </string>
+         <string name="done"> हो गया </string>
+         <string name="okay"> ठीक है </string>
+         <string name="marked"> चिह्नित </string>
+         <string name = "reason_for_application_rejection"> एप्लिकेशन अस्वीकृति का कारण </string>
+         <string name = "write_rejection_reason_here"> यहां अस्वीकृति कारण लिखें </string>
+         <string name = "mark_all_fields_correct"> सभी फ़ील्ड को सही करें </string>
+
+        <!--Current Stock Activity-->
+        <string name="item">आइटम </string>
+        <string name="quantity">मात्रा </string>
+
+    <!--Stock Bill Activity-->
+    <string name="billno">बिल संख्या</string>
+    <string name="datetime">बिल दिनांक</string>
+    <string name="receivedby">द्वारा प्राप्त: </string>
+
+    <!--Stock Bill View Activity-->
+    <string name="billtime">बिल टाइम</string>
+    <string name="billitems">बिल आइटम</string>
+    <string name="deliveredby">द्वारा वितरित: </string>
+
+    <!--Stock Bill View Activity-->
+    <string name="helperid">सहायक आईडी</string>
+    <string name="helpername">सहायक नाम</string>
+    <string name="rejectionreason">अस्वीकृति कारण</string>
+
+</resources>

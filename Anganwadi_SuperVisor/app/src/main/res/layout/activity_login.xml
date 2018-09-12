@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:orientation="vertical"
+    android:paddingTop="80dp"
+    android:gravity="center_horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.vinamra.anganwadi_supervisor.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_please"
+        android:textSize="@dimen/subHeadingSize"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/translucent_black_background">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/supervisor_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_iconLeft="@drawable/ic_account_circle_white_24dp"
+            app:met_iconPadding="4dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@$_#1234567890"
+            android:inputType="textFilter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            app:met_floatingLabelText="@string/supervisor_id"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextColor="@color/white"
+            android:textColor="@color/white"
+            android:hint="@string/enter_supervisor_id"
+            app:met_textColorHint="@color/white"
+            app:met_clearButton="true"
+            app:met_baseColor="@color/white"
+            app:met_errorColor="@color/red_error"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/supervisor_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_iconLeft="@drawable/ic_lock_white_24dp"
+            app:met_iconPadding="4dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@$_#1234567890"
+            android:inputType="textPassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            app:met_floatingLabelText="@string/supervisor_password"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextColor="@color/white"
+            android:textColor="@color/white"
+            android:hint="@string/enter_supervisor_password"
+            app:met_textColorHint="@color/white"
+            app:met_clearButton="true"
+            app:met_baseColor="@color/white"
+            app:met_errorColor="@color/red_error"/>
+
+    </LinearLayout>
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/sign_in"
+        android:textSize="@dimen/buttonTextSize"
+        android:onClick="authCheck"
+        android:textColor="#fff"
+        app:pb_colorNormal="@color/orange"
+        android:backgroundTint="@color/orange"/>
+
+</LinearLayout>

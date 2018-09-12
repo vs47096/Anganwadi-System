@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ImageStep="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".child_reg">
+    <com.bluehomestudio.steps.CircleImageSteps
+        android:id="@+id/cis_steps"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ImageStep:step_size="40dp"
+        ImageStep:active_step_color="#f22d17"
+        android:fadingEdgeLength="80dp"
+        android:paddingStart="10dp"
+        ImageStep:inActive_step_color="#dcd5d5"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="430dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"></FrameLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT>>>>"
+        android:background="#0ad68b"
+        android:id="@+id/next"/>
+
+</LinearLayout>

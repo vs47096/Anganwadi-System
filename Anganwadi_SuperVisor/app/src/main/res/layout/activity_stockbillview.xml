@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_generalbackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="6dp"
+                android:padding="8dp"
+                android:background="@drawable/white_boundary_black_bck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/billno"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/editTextContentSize"/>
+                    <TextView
+                        android:id="@+id/viewbillno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Bill No Value"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/editTextContentSize"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/datetime"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/editTextContentSize"/>
+                    <TextView
+                        android:id="@+id/viewbilldate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Bill Date Value"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/editTextContentSize"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/billtime"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/editTextContentSize"/>
+                    <TextView
+                        android:id="@+id/viewbilltime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Bill Time Value"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/editTextContentSize"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.dmallcott.dismissibleimageview.DismissibleImageView
+                android:id="@+id/billPicDismissableView"
+                android:layout_width="280dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/billitems"
+                    android:textColor="@color/white"
+                    android:background="@drawable/white_boundary_black_bck"
+                    android:padding="6dp"
+                    android:textSize="@dimen/subHeadingSize"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.dmallcott.dismissibleimageview.DismissibleImageView
+                        android:id="@+id/billItemsDismissableView1"
+                        android:layout_width="136dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"/>
+
+                    <com.dmallcott.dismissibleimageview.DismissibleImageView
+                        android:id="@+id/billItemsDismissableView2"
+                        android:layout_width="136dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/white_boundary_black_bck"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deliveredby"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/editTextContentSize"/>
+                <TextView
+                    android:id="@+id/deliverypnameTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="DeliveryPName"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/subHeadingSize"/>
+
+            </LinearLayout>
+
+                <com.dmallcott.dismissibleimageview.DismissibleImageView
+                    android:id="@+id/deliverypsignDismissableView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/white_boundary_black_bck"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/receivedby"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/editTextContentSize"/>
+                <TextView
+                    android:id="@+id/helpernameTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HelperName"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/subHeadingSize"/>
+            </LinearLayout>
+
+                <com.dmallcott.dismissibleimageview.DismissibleImageView
+                    android:id="@+id/helpersignDismissableView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

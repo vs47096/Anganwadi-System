@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/homebackground"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <LinearLayout
+                android:id="@+id/newStockUpdateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_columnWeight="0.5"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/newstock_icon"/>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/new_stock" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/foodRecordBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_columnWeight="0.5"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/foodrecord_icon"/>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/food_record" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/childregistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_columnWeight="0.5"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/icon_childregistration"/>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/child_registration" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/medical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_columnWeight="0.5"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/icon_medical"/>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/medical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/logOutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_gravity="fill"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/logout_icon"/>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/log_out" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>

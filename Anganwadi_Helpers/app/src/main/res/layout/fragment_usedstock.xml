@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_yellow_darkblue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/items"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/subHeadingSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/quantity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/subHeadingSize" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+
+            <ListView
+                android:id="@+id/stockItemsListView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                android:isScrollContainer="false"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/addStockItemRowFabBtn"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:tint="@color/white"
+                    android:layout_marginRight="20dp"
+                    app:elevation="6dp"
+                    app:backgroundTint="#51ad86" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/removeStockItemRowFabBtn"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/ic_remove_black_24dp"
+                    android:tint="@color/white"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="20dp"
+                    app:elevation="6dp"
+                    app:backgroundTint="#51ad86" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/stockItemEntryproceedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/proceed"
+                android:textSize="@dimen/buttonTextSize"
+                android:background="@drawable/white_boundary_black_bck"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

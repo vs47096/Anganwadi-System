@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="@string/contact_details"
+                android:textSize="@dimen/headingSize"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="@string/how_to_contact_you"
+                android:textSize="@dimen/subHeadingSize"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="@string/give_your_contact_details_please"
+                android:textSize="@dimen/subHeadingSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/registrationContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="@string/contact_number"
+                    android:textSize="@dimen/editTextContentSize"
+                    android:hint="@string/enter_contact_number"
+
+                    app:met_helperTextAlwaysShown="true"
+                    app:met_iconLeft="@drawable/ic_call_black_24dp"
+                    app:met_iconPadding="4dp"
+                    android:paddingBottom="10dp"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    app:met_clearButton="true"
+                    app:met_maxCharacters="10"
+                    android:maxLength="10"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/registrationAltContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    app:met_floatingLabel="highlight"
+                    android:textSize="@dimen/editTextContentSize"
+                    android:paddingTop="10dp"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    app:met_floatingLabelText="@string/alternate_contact_number"
+                    android:hint="@string/alternate_contact_number"
+                    app:met_iconLeft="@drawable/ic_call_black_24dp"
+                    app:met_iconPadding="4dp"
+                    app:met_clearButton="true"
+                    app:met_maxCharacters="10"
+                    android:maxLength="10"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+                android:drawablePadding="9dp"
+                android:textColor="#000"
+                android:alpha="0.3"
+                android:text="@string/enter_without_91"
+                android:textSize="13sp"/>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/contactfragmentBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proceed"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"/>
+
+            <WebView
+                android:id="@+id/otpWebView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

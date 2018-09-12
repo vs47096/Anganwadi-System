@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/gradient_yellow_darkblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/white_boundary_black_bck">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/deliveryPersonNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+            android:gravity="center_horizontal"
+            android:hint="@string/enter_delivery_person_name"
+            android:inputType="textFilter"
+            android:textSize="@dimen/editTextContentSize"
+            app:met_clearButton="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/delivery_person_name"
+            app:met_floatingLabelTextColor="@color/white"
+            android:textColor="@color/white"
+            app:met_textColorHint="@color/white"
+            app:met_baseColor="@color/white"
+            app:met_errorColor="@color/red_error"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/deliveryPersonSignatureCheckedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_person_signature"
+            android:textSize="@dimen/subHeadingSize"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:drawablePadding="15dp"/>
+
+        <TextView
+            android:id="@+id/helperSignatureCheckedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/helper_signature"
+            android:textSize="@dimen/subHeadingSize"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:drawablePadding="15dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/openSignatureActivityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_person_signature"
+        android:background="@drawable/white_boundary_black_bck"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize" />
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/doneSignatureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:textSize="@dimen/buttonTextSize"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:clickable="false"/>
+
+</LinearLayout>

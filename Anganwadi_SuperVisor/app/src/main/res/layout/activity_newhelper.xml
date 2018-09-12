@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newHelperParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_generalbackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="14dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/generate_credentials_for_helper"
+                android:textColor="@color/white"
+                android:textSize="@dimen/headingSize"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/editTextContentSize"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:hint="@string/enter_first_name"
+                    android:inputType="textFilter"
+                    android:maxLength="20"
+                    app:met_clearButton="true"
+                    app:met_maxCharacters="20"
+                    app:met_floatingLabelText="@string/first_name"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/white"
+                    android:textColor="@color/white"
+                    app:met_textColorHint="@color/white"
+                    app:met_baseColor="@color/white"
+                    app:met_errorColor="@color/red_error"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/surName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/editTextContentSize"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:hint="@string/enter_sur_name"
+                    android:inputType="textFilter"
+                    android:maxLength="20"
+                    app:met_clearButton="true"
+                    app:met_maxCharacters="20"
+                    app:met_floatingLabelText="@string/sur_name"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/white"
+                    android:textColor="@color/white"
+                    app:met_textColorHint="@color/white"
+                    app:met_baseColor="@color/white"
+                    app:met_errorColor="@color/red_error" />
+            </LinearLayout>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/generate_id_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/generate_id__password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_boundary_black_bck"
+                android:padding="14dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/userId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/generated_user_id"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@_1234567890"
+                    android:inputType="textFilter"
+                    android:maxLength="20"
+                    app:met_clearButton="true"
+                    app:met_maxCharacters="20"
+                    app:met_floatingLabelText="@string/user_id"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/white"
+                    android:textColor="@color/white"
+                    app:met_textColorHint="@color/white"
+                    app:met_baseColor="@color/white"
+                    app:met_errorColor="@color/red_error"
+                    android:drawableLeft="@drawable/ic_account_circle_white_24dp"
+                    android:drawablePadding="6dp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="30"
+                    android:hint="@string/generated_password"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@_1234567890"
+                    android:inputType="textFilter"
+                    app:met_clearButton="true"
+                    app:met_maxCharacters="20"
+                    app:met_floatingLabelText="@string/password"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/white"
+                    android:textColor="@color/white"
+                    app:met_textColorHint="@color/white"
+                    app:met_baseColor="@color/white"
+                    app:met_errorColor="@color/red_error"
+                    android:drawableLeft="@drawable/ic_lock_white_24dp"
+                    android:drawablePadding="6dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:drawableLeft="@drawable/ic_info_outline_white_18dp"
+                    android:textColor="@color/white"
+                    android:text="@string/these_will_be_auto_generated"/>
+            </LinearLayout>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/createHelperAccountButton"
+                android:text="@string/create_helper_Account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/buttonTextSize"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/holo_green_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

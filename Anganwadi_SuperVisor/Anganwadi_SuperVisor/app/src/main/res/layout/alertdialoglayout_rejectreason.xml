@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reason_for_application_rejection"
+        android:layout_gravity="left"
+        android:textSize="@dimen/subHeadingSize"/>
+
+    <EditText
+        android:id="@+id/rejectReasonEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:textSize="@dimen/editTextContentSize"
+        android:gravity="start"
+        android:hint="@string/write_rejection_reason_here"
+        android:background="@drawable/greenrect_viewborder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/dismissRejectDialogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/bottom_text_size"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/doneRejectDialogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/bottom_text_size"
+            android:text="@string/done"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

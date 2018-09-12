@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/photonamefragmentcontainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/photo_background"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/avatar_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/ic_profile"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:id="@+id/smilePlease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/smile_please"
+                android:textColor="#fff"
+                android:textSize="28dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complete_your_details_please"
+            android:layout_marginTop="14dp"
+            android:textSize="@dimen/subHeadingSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:textSize="@dimen/editTextContentSize"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:inputType="textFilter"
+                app:met_floatingLabelText="@string/first_name"
+                android:hint="@string/first_name"
+                android:padding="6dp"
+                app:met_clearButton="true"
+                app:met_maxCharacters="20"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/middleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:padding="6dp"
+                android:textSize="@dimen/editTextContentSize"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:inputType="textFilter"
+                app:met_floatingLabelText="@string/middle_name_optional"
+                android:hint="@string/middle_name_optional"
+                app:met_clearButton="true"
+                app:met_maxCharacters="30"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/surName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:textSize="@dimen/editTextContentSize"
+                android:padding="6dp"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:inputType="textFilter"
+                app:met_floatingLabelText="@string/sur_name"
+                android:hint="@string/sur_name"
+                app:met_clearButton="true"
+                app:met_maxCharacters="30"/>
+        </LinearLayout>
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/photoNameUploadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proceed"
+            android:textSize="@dimen/buttonTextSize"
+            android:textColor="#fff"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

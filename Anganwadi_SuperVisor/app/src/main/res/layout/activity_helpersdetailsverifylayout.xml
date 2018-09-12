@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgroundimage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/helperIdVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:text="helperid"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/translucent_white_background">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/avatarVerifyView"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/redrect_viewborder"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_profile"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+                <Switch
+                    android:id="@+id/avatarSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="@string/review"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:gravity="center"
+                android:background="@drawable/translucent_white_background"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/nameTextVerifyView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="@dimen/editTextContentSize"
+                    android:text="TextView"
+                    android:background="@drawable/redrect_viewborder"/>
+
+                <Switch
+                    android:id="@+id/nameSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="@string/review"
+                    android:layout_marginLeft="24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/translucent_white_background"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/idProofSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hapticFeedbackEnabled="true"
+                    android:layout_margin="10dp"
+                    android:text="@string/review" />
+
+                <com.dmallcott.dismissibleimageview.DismissibleImageView
+                    android:id="@+id/idProofVerifyImageView"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/redrect_viewborder"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="20dp">
+
+                <Button
+                    android:id="@+id/verifyBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/verify"
+                    android:layout_margin="4dp"
+                    android:textSize="@dimen/buttonTextSize"
+                    android:textColor="@color/white"
+                    android:background="@drawable/white_boundary_black_bck"/>
+
+                <Button
+                    android:id="@+id/reviewBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Review"
+                    android:layout_margin="4dp"
+                    android:textSize="@dimen/buttonTextSize"
+                    android:textColor="@color/white"
+                    android:background="@drawable/white_boundary_black_bck"/>
+
+                <Button
+                    android:id="@+id/rejectBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reject"
+                    android:layout_margin="4dp"
+                    android:textSize="@dimen/buttonTextSize"
+                    android:textColor="@color/white"
+                    android:background="@drawable/white_boundary_black_bck"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

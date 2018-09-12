@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_generalbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/headingSize"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:text="@string/working_helpers_list"/>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="24dp"
+        android:onClick="animate"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_icons8_search"
+            android:onClick="animate" />
+
+        <EditText
+            android:id="@+id/searchStockEditText"
+            android:layout_width="150dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:textSize="@dimen/editTextContentSize"
+            android:paddingStart="4dp"
+            android:textColor="@color/white"
+            android:alpha="0" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/workingHelpersListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_boundary_black_bck"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="6dp">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "419798400860",
+    "firebase_url": "https://anganwadihelpers-d293c.firebaseio.com",
+    "project_id": "anganwadihelpers-d293c",
+    "storage_bucket": "anganwadihelpers-d293c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419798400860:android:7d96db6fa64a9be3",
+        "android_client_info": {
+          "package_name": "com.example.vinamra.anganwadi_helpers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419798400860-tj8s3l5tud3kf0aa5nrfand501e7em63.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vinamra.anganwadi_helpers",
+            "certificate_hash": "4dc012ad27dad179a878cc166e9978b938f5d6ab"
+          }
+        },
+        {
+          "client_id": "419798400860-7ob0drc78dr9svej2eeejoopc5uq3k25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDffrtRs-Z8fwxv6DHDTs9Lcn78IAgx4XM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419798400860-7ob0drc78dr9svej2eeejoopc5uq3k25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

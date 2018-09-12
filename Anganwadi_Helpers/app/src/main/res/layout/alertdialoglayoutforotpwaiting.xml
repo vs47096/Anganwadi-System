@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/photo_background"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_schedule_white_24px"
+        android:drawablePadding="9dp"
+        android:textColor="#fff"
+        android:text="@string/otp_may_reach_within_1_minute"
+        android:textSize="12dp"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/AVLoadingIndicatorView.Large"
+        android:visibility="visible"
+        app:indicatorName="BallGridPulseIndicator"
+        app:indicatorColor="#fff" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="12dp"/>
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/otpWaitingProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:rcProgress="0"
+        app:rcMax="100"
+        app:rcRadius="5dp"
+        app:rcBackgroundPadding="2dp"
+        app:rcReverse="false"
+        app:rcProgressColor="#0eb3a2"
+        app:rcSecondaryProgressColor="#17958e"
+        app:rcBackgroundColor="#e9eaec" />
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newHelperParentLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_name_of_new_helper"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:hint="@string/first_name"
+            android:inputType="textFilter"
+            android:maxLength="20"
+            app:met_clearButton="true"
+            app:met_maxCharacters="20" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/surName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:hint="@string/sur_name"
+            android:inputType="textFilter"
+            android:maxLength="20"
+            app:met_clearButton="true"
+            app:met_maxCharacters="20" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generate_id_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generate_id__password"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_design"
+        android:padding="14dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/generated_user_id"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@_1234567890"
+            android:inputType="textFilter"
+            app:met_clearButton="true"
+            android:maxLength="20"
+            app:met_maxCharacters="20" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:hint="@string/generated_password"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@_1234567890"
+            android:inputType="textFilter"
+            app:met_maxCharacters="30"
+            app:met_clearButton="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/these_will_be_auto_generated"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createHelperAccountButton"
+        android:text="@string/create_helper_Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:onClick="newhelpertempdatastorage"/>
+
+</LinearLayout>

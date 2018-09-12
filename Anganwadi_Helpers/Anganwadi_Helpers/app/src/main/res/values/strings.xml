@@ -1,0 +1,97 @@
+<resources>
+    <string name="anganwadi">Anganwadi</string>
+    <string name="app_name">Helpers</string>
+
+    <string name="log_out">Log Out</string>
+
+    <!--Login Activity-->
+    <string name="welcome">Welcome!</string>
+    <string name="sign_in_by_entering_the_information_below">Sign in by entering the information below</string>
+    <string name="enter_userID">Enter UserID</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="are_you_a_new_helper">Are you a new helper \?</string>
+
+    <!--Home Activity-->
+    <string name="new_stock">New Stock</string>
+    <string name="food_record">Food Record</string>
+
+    <!--New Stock Update Activity-->
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="items">Items</string>
+    <string name="quantity">Quantity</string>
+
+    <!--Registration-Login Fragment-->
+    <string name="registration">Registration</string>
+    <string name="userID">UserID</string>
+    <string name="password">Password</string>
+    <string name="login_to_complete_registration">Login to complete Registration</string>
+    <string name="enter_credentials_provided_by_supervisor">Enter credentials provided by supervisor</string>
+    <string name="proceed">Proceed</string>
+
+    <!--Change Password Fragment-->
+    <string name="change_password">Change Password</string>
+    <string name="you_used_a_temporary_password">You used a temporary password</string>
+    <string name="provide_a_new_password">Provide a new password</string>
+    <string name="give_a_new_password">Give a New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="lets_confirm_your_Password">Let`s confirm your Password</string>
+    <string name="confirm_your_Password">Confirm your Password</string>
+    <string name="password_must_contain">Password must contain \n 1 capital letter and 1 special character</string>
+    <string name="password_length_should">Length should be 8-30 characters </string>
+
+    <!--Photo Name Fragment-->
+    <string name="smile_please">Smile Please</string>
+    <string name="complete_your_details_please">Complete your details, Please</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name_optional">Middle Name (Optional)</string>
+    <string name="sur_name">Sur Name</string>
+
+    <!--Contact Fragment-->
+    <string name="contact_details">Contact Details</string>
+    <string name="how_to_contact_you">How to contact you ?</string>
+    <string name="give_your_contact_details_please">Give your Contact Details please</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="enter_contact_number">Enter Contact Number</string>
+    <string name="otp_will_be_sent_to_this_number">OTP will be sent to this number</string>
+    <string name="alternate_contact_number">Alternate Contact Number</string>
+    <string name="enter_alternate_contact_number">Enter Alternate Contact Number</string>
+    <string name="enter_without_91">Enter number without \'+91\' </string>
+
+    <!--Id Proof Fragment-->
+    <string name="give_your_id_proof">Give your ID proof</string>
+
+    <!--Registration Status Fragment-->
+    <string name="hooray">Hooray !</string>
+    <string name="you_have_completed_your_registration">You have completed your registration</string>
+    <string name="wait_for_supervisor_to_verify_your_details">Wait for Supervisor to verify your details</string>
+    <string name="done">Done</string>
+
+    <!--Alert Layout for otp Loading-->
+    <string name="otp_may_reach_within_1_minute">OTP may reach within 30 seconds</string>
+
+    <!--StockBill Upload Fragment-->
+    <string name="enter_bill_number">Enter Bill Number</string>
+    <string name="bill_number">Bill Number</string>
+    <string name="upload_bill_photo">Upload Bill Photo</string>
+
+    <!--StockItemsPic Upload Fragment-->
+    <string name="upload_stock_photo">Upload Stock Photo</string>
+    <string name="upload_exactly_2_photos">Upload Exactly 2 Stock Photos</string>
+
+    <!--Stock Received Signature Fragment-->
+    <string name="delivery_person_name">Delivery person Name</string>
+    <string name="enter_delivery_person_name">Enter Delivery person Name</string>
+    <string name="helper_signature">Helper Signature</string>
+    <string name="delivery_person_signature">Delivery Person Signature</string>
+    <string name="signatures_done">Signature Done</string>
+
+    <!--Enter Menu Fragment-->
+    <string name="meal">Meal</string>
+    <string name="todays_menu">Today`s Menu</string>
+    <string name="enter_todays_menu">Enter Today`s Menu</string>
+    <string name="dont_leave_it_blank">Don`t leave it blank</string>
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vinamra.anganwadi_supervisor">
+    <uses-sdk android:minSdkVersion="15"></uses-sdk>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/supervisor_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/supervisor_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".HomeActivity"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+        <activity android:name=".NewHelperActivity">
+
+        </activity>
+        <activity android:name=".UnverifiedHelpersListActivity">
+
+        </activity>
+        <activity android:name=".HelperDetailsVerifyActivity">
+
+        </activity>
+        <activity android:name=".WorkingHelpersListActivity">
+
+        </activity>
+        <activity android:name=".HelperDetailsViewActivity">
+
+        </activity>
+        <activity android:name=".CurrentStockActivity">
+
+        </activity>
+        <activity android:name=".StockBillsActivity">
+
+        </activity>
+        <activity android:name=".StockBillViewActivity">
+
+        </activity>
+        <activity android:name=".RejectedHelpersActivity">
+
+        </activity>
+        <activity android:name=".List_of_doctor">
+
+        </activity>
+        <activity android:name=".child_list">
+
+        </activity>
+    </application>
+
+</manifest>
