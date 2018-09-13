@@ -30,3 +30,7 @@ On receiving new stock, helper has to update using the helper app, which require
 
 To keep a record of the daily meal prepared and quantity of items used, helper has to make entries using the helper app. Screenshots of food record module is shown below:
 <p align="center"><img src="/Screenshots/Helpers App/Screenshot_20180514-093755.png" width="210" height="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Screenshots/Helpers App/Screenshot_20180514-093813.png"  width="210" height="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Screenshots/Helpers App/Screenshot_20180514-093816.png"  width="210" height="400"/></p>
+
+Helper has to update about details of new child and new doctor to be regsitered. Screenshot of these modules are shown below:
+<p align="center"><img src="/Screenshots/Helpers App/Screenshot_20180514-093843.png" width="210" height="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Screenshots/Helpers App/Screenshot_20180514-093858.png"  width="210" height="400"/></p>
+<p align="center"><img src="/Screenshots/Helpers App/Screenshot_20180514-093933.png" width="210" height="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Screenshots/Helpers App/Screenshot_20180514-093958.png"  width="210" height="400"/></p>
