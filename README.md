@@ -34,3 +34,8 @@ To keep a record of the daily meal prepared and quantity of items used, helper h
 Helper has to update about details of new child and new doctor to be regsitered. Screenshot of these modules are shown below:
 <p align="center"><img src="/Screenshots/Helpers App/Screenshot_20180514-093843.png" width="210" height="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Screenshots/Helpers App/Screenshot_20180514-093858.png"  width="210" height="400"/></p>
 <p align="center"><img src="/Screenshots/Helpers App/Screenshot_20180514-093933.png" width="210" height="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Screenshots/Helpers App/Screenshot_20180514-093958.png"  width="210" height="400"/></p>
+
+Website is created for displaying the records related to anganwadi so that maximum level of transparency in the system can be achieved. Screenshots of website are shown below:
+<p align="center"><img src="/Screenshots/Website/1.png" width="410" height="229"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Screenshots/Website/2.png"  width="410" height="229"/></p>
+<p align="center"><img src="/Screenshots/Website/3.png" width="410" height="229"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/Screenshots/Website/4.png"  width="410" height="229"/></p>
+<p align="center"><img src="/Screenshots/Website/5.png" width="410" height="229"/></p>
